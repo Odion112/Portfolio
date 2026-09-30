@@ -73,7 +73,7 @@ function Navbar() {
 
             {socialsOpen && (
               <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4">
-                <ul className="min-w-40 border border-gray-200 bg-white py-2 shadow-lg">
+                <ul className="min-w-28 border border-gray-200 bg-white py-2 shadow-lg">
                   {socials.map((s) => (
                     <li key={s.label}>
                       <a
