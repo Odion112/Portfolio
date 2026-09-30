@@ -1,4 +1,6 @@
 import { useState } from "react";
+import logo from "../assets/images/logo.svg";
+import Button from "./Button";
 
 const links = [
   { label: "Works", href: "#works" },
@@ -35,14 +37,11 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white border-b border-gray-200">
+    <header className="w-full border-b border-gray-200 bg-white">
       <nav className="mx-auto flex h-24 max-w-[1440px] items-center justify-between px-6 md:px-24">
-        {/* Logo */}
-        <a
-          href="/"
-          className="font-rothek text-2xl font-extrabold italic text-neutral-900"
-        >
-          Odion
+        {/* Logo image */}
+        <a href="/" className="flex items-center">
+          <img src={logo} alt="Odion" className="h-7 w-auto" />
         </a>
 
         {/* Desktop links */}
@@ -51,7 +50,7 @@ function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="font-rothek text-base font-medium text-neutral-900 transition-colors hover:text-indigo-600"
+              className="font-rothek text-base font-medium text-[#1F1D1D] transition-colors hover:text-[#4F46E5]"
             >
               {link.label}
             </a>
@@ -66,7 +65,7 @@ function Navbar() {
             <button
               type="button"
               onClick={() => setSocialsOpen((v) => !v)}
-              className="flex cursor-pointer items-center gap-1 font-rothek text-base font-medium text-neutral-900 transition-colors hover:text-indigo-600"
+              className="flex cursor-pointer items-center gap-1 font-rothek text-base font-medium text-[#1F1D1D] transition-colors hover:text-[#4F46E5]"
             >
               Socials
               <Chevron open={socialsOpen} />
@@ -81,7 +80,7 @@ function Navbar() {
                         href={s.href}
                         target="_blank"
                         rel="noreferrer"
-                        className="block px-5 py-2 font-rothek text-sm font-medium text-neutral-900 hover:bg-gray-50 hover:text-indigo-600"
+                        className="block px-5 py-2 font-rothek text-sm font-medium text-[#1F1D1D] hover:bg-gray-50 hover:text-[#4F46E5]"
                       >
                         {s.label}
                       </a>
@@ -92,13 +91,7 @@ function Navbar() {
             )}
           </div>
 
-          {/* Contact button */}
-          <a
-            href="#contact"
-            className="bg-indigo-600 px-8 py-3.5 font-rothek text-base font-medium text-white transition-colors hover:bg-indigo-700"
-          >
-            Contact
-          </a>
+          <Button href="#contact">Contact</Button>
         </div>
 
         {/* Mobile hamburger */}
@@ -108,9 +101,9 @@ function Navbar() {
           onClick={() => setMenuOpen((v) => !v)}
           className="flex h-10 w-10 cursor-pointer flex-col items-center justify-center gap-1.5 md:hidden"
         >
-          <span className="h-0.5 w-6 bg-neutral-900" />
-          <span className="h-0.5 w-6 bg-neutral-900" />
-          <span className="h-0.5 w-6 bg-neutral-900" />
+          <span className="h-0.5 w-6 bg-[#1F1D1D]" />
+          <span className="h-0.5 w-6 bg-[#1F1D1D]" />
+          <span className="h-0.5 w-6 bg-[#1F1D1D]" />
         </button>
       </nav>
 
@@ -121,7 +114,7 @@ function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="font-rothek text-base font-medium text-neutral-900"
+              className="font-rothek text-base font-medium text-[#1F1D1D]"
             >
               {link.label}
             </a>
@@ -130,17 +123,12 @@ function Navbar() {
             <a
               key={s.label}
               href={s.href}
-              className="font-rothek text-base font-medium text-neutral-900"
+              className="font-rothek text-base font-medium text-[#1F1D1D]"
             >
               {s.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            className="bg-indigo-600 px-8 py-3.5 text-center font-rothek text-base font-medium text-white"
-          >
-            Contact
-          </a>
+          <Button href="#contact">Contact</Button>
         </div>
       )}
     </header>
