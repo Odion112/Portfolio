@@ -36,7 +36,7 @@ function WorkCard({
     </>
   );
 
-  const styles = `block w-[580px] max-w-full bg-[#F6F6F6] p-5 pb-8 shadow-[0_8px_40px_rgba(0,0,0,0.06)] ${className}`;
+  const styles = `block w-[580px] max-w-full bg-[#F6F6F6] p-5 pb-8 shadow-[0_2px_4px_rgba(0,0,0,0.06)] ${className}`;
 
   // If an href is passed, the whole card becomes a link
   if (href) {
