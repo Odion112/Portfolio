@@ -1,23 +1,30 @@
 import Navbar from "./components/Navbar";
-import ReviewCard from "./components/ReviewCard";
+import Hero from "./pages/HeroSection";
+import About from "./pages/About";
 
-// Change to your real file name in src/assets/images
-import ademola from "./assets/images/ademola.svg";
+// Change these to match your real file names in src/assets/images
+import heroImage from "./assets/images/hero.svg";
+import behance from "./assets/images/behance.svg";
+import linkedin from "./assets/images/linkedin.svg";
+import aboutImage from "./assets/images/about.svg";
 
 function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
 
-      <main className="flex justify-center p-10">
-        <ReviewCard
-          quote="For more than 4 years now, design has been at the center of my world. Along the way, I've worked across fintech, edtech, health tech, and Shopify ecommerce,"
-          name="Ademola"
-          role="Founder of IBT Learning"
-          avatar={ademola}
-          avatarAlt="Portrait of Ademola"
-        />
-      </main>
+      <Hero
+        image={heroImage}
+        imageAlt="Portrait of Odion"
+        socials={[
+          { name: "Behance", href: "https://www.behance.net/odionjoy", icon: behance },
+          { name: "LinkedIn", href: "https://www.linkedin.com/", icon: linkedin },
+        ]}
+      />
+
+      {/* About Section*/}
+      <About image={aboutImage} imageAlt="Portrait of Odion" />
+
     </div>
   );
 }
