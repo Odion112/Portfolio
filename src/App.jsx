@@ -1,12 +1,24 @@
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Hero from "./pages/HeroSection";
+
+// Change these to match your real file names in src/assets/images
+import heroImage from "./assets/images/hero.svg";
+import behance from "./assets/images/behance.svg";
+import linkedin from "./assets/images/linkedin.svg";
 
 function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
-      {/* page sections */}
-      <Footer />
+
+      <Hero
+        image={heroImage}
+        imageAlt="Portrait of Odion"
+        socials={[
+          { name: "Behance", href: "https://www.behance.net/odionjoy", icon: behance },
+          { name: "LinkedIn", href: "https://www.linkedin.com/", icon: linkedin },
+        ]}
+      />
     </div>
   );
 }
