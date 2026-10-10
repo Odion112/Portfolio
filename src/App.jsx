@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./pages/HeroSection";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import Works from "./pages/Works";
 
 // Change these to match your real file names in src/assets/images
 import heroImage from "./assets/images/hero.svg";
@@ -27,6 +28,8 @@ function App() {
       <About image={aboutImage} imageAlt="Portrait of Odion" />
 
         <Services />
+
+          <Works />
 
     </div>
   );
