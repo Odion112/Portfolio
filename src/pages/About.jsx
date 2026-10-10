@@ -58,7 +58,7 @@ function About({
             {paragraphs.map((p, index) => (
               <p
                 key={index}
-                className="max-w-[760px] font-rothek text-lg font-normal leading-8 text-[#6B6B6B] md:text-xl"
+                className="max-w-[760px] font-rothek text-[20px] font-regular leading-8 text-[#6B6B6B] md:text-[20px]"
               >
                 {p}
               </p>

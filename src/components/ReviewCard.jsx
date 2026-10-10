@@ -26,7 +26,7 @@ function ReviewCard({
     <figure className={`w-[540px] max-w-full ${className}`}>
       {/* Quote text + quote mark */}
       <div className="flex items-start justify-between gap-6">
-        <blockquote className="max-w-[400px] font-rothek text-2xl font-normal leading-snug text-[#6B6B6B]">
+        <blockquote className="max-w-[400px] font-rothek text-[20px] font-regular leading-snug text-[#6B6B6B]">
           {quote}
         </blockquote>
 
@@ -47,10 +47,10 @@ function ReviewCard({
           className="h-20 w-20 rounded-full object-cover"
         />
         <div>
-          <p className="font-rothek text-2xl font-medium text-[#1F1D1D]">
+          <p className="font-rothek text-[20px] font-medium text-[#1F1D1D]">
             {name}
           </p>
-          <p className="font-rothek text-2xl font-normal text-[#6B6B6B]">
+          <p className="font-rothek text-[20px] font-normal text-[#6B6B6B]">
             {role}
           </p>
         </div>
