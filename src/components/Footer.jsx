@@ -1,0 +1,87 @@
+import Button from "./Button";
+
+const footerLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Portfolio", href: "#works" },
+];
+
+function ArrowUpRight() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M7 17 17 7M8 7h9v9" />
+    </svg>
+  );
+}
+
+function Footer({
+  heading = "Have A Project In Mind?",
+  text = "Honestly, this is where every project starts for me. I can't design a solution to a problem I don't understand yet — so I ask, I listen, I test, and I let what I learn shape everything that comes after.",
+  buttonLabel = "Let's talk!",
+  buttonHref = "#contact",
+  name = "Odion Okhuevbie",
+  links = footerLinks,
+}) {
+  return (
+    <footer className="w-full overflow-hidden bg-white">
+      {/* CTA section with gradient */}
+      <section
+        id="contact"
+        className="bg-[linear-gradient(to_bottom,#4F46E5_0%,#FFFFFF_45%)] px-6 pb-20 pt-24 text-center"
+      >
+        <h2 className="mx-auto max-w-[900px] font-rothek text-4xl font-medium text-black md:text-6xl">
+          {heading}
+        </h2>
+
+        <p className="mx-auto mt-8 max-w-[760px] font-rothek text-base font-normal leading-relaxed text-[#1F1D1D] md:text-lg">
+          {text}
+        </p>
+
+        <div className="mt-16">
+          <Button href={buttonHref} icon={<ArrowUpRight />}>
+            {buttonLabel}
+          </Button>
+        </div>
+      </section>
+
+      {/* Links + copyright */}
+      <div className="mx-auto flex max-w-[1440px] flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between md:px-24">
+        <nav className="flex flex-wrap items-center gap-6 md:gap-10">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="font-rothek text-xl font-normal text-[#1F1D1D] transition-colors hover:text-[#4F46E5]"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <p className="font-rothek text-base font-normal text-[#6B6B6B] md:text-lg">
+          © {new Date().getFullYear()} {name}. All rights reserved.
+        </p>
+      </div>
+
+      {/* Large cropped name */}
+      <div className="mx-auto mt-10 h-[10vw] max-w-[1440px] overflow-hidden px-6 md:px-24">
+        <p className="whitespace-nowrap text-center font-lora text-[15vw] italic leading-none text-black md:text-[min(15vw,220px)]">
+          {name}
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
