@@ -178,7 +178,7 @@ function Services({
         <h2 className="mt-2 font-rothek text-[32px] font-medium leading-tight text-black md:text-[40px]">
           {heading} <span className="text-[#C4C4C4]">{highlight}</span>
         </h2>
-        <p className="mt-6 max-w-[760px] font-rothek text-lg font-normal leading-relaxed text-[#6B6B6B]">
+        <p className="mt-6 max-w-[760px] font-rothek text-[20px] font-regular leading-relaxed text-[#6B6B6B]">
           {text}
         </p>
       </div>

@@ -3,6 +3,7 @@ import Hero from "./pages/HeroSection";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Works from "./pages/Works";
+import Reviews from "./pages/Reviews";
 
 // Change these to match your real file names in src/assets/images
 import heroImage from "./assets/images/hero.svg";
@@ -30,6 +31,8 @@ function App() {
         <Services />
 
           <Works />
+
+          <Reviews />
 
     </div>
   );

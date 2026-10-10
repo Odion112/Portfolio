@@ -33,12 +33,12 @@ function ServiceCard({
         )}
       </h3>
 
-      <p className="mt-4 font-rothek text-base font-normal leading-relaxed text-[#1F1D1D]">
+      <p className="mt-6 font-rothek text-lg font-normal leading-relaxed text-[#1F1D1D]">
         {description}
       </p>
 
       {tools.length > 0 && (
-        <ul className="mt-auto flex items-center gap-5 pt-8">
+        <ul className="mt-6 flex items-center gap-5 pt-8">
           {tools.map((tool, index) => {
             const size = tool.size ?? toolSize;
             return (
