@@ -1,19 +1,25 @@
+import Navbar from "./components/Navbar";
+import ReviewCard from "./components/ReviewCard";
+
+// Change to your real file name in src/assets/images
+import ademola from "./assets/images/ademola.svg";
+
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="font-rothek text-6xl font-extrabold">
-        Hi, I'm Odion
-      </h1>
+    <div className="min-h-screen">
+      <Navbar />
 
-      <p className="font-rothek text-xl font-medium">
-        Product Designer
-      </p>
-
-      <p className="font-lora italic text-xl">
-        Designing with intention.
-      </p>
+      <main className="flex justify-center p-10">
+        <ReviewCard
+          quote="For more than 4 years now, design has been at the center of my world. Along the way, I've worked across fintech, edtech, health tech, and Shopify ecommerce,"
+          name="Ademola"
+          role="Founder of IBT Learning"
+          avatar={ademola}
+          avatarAlt="Portrait of Ademola"
+        />
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
