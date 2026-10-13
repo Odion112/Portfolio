@@ -63,7 +63,7 @@ function Works({
   label = "/Portfolio",
   heading = "Selected Works",
   buttonLabel = "View all work",
-  buttonHref = "https://www.behance.net/odionjoy",
+  buttonTo = "/works",
   works = defaultWorks,
   className = "",
 }) {
@@ -81,16 +81,14 @@ function Works({
           </h2>
         </div>
 
-        <Button
-          href={buttonHref}
-          variant="outline"
-          icon={<ArrowUpRight />}
-          target="_blank"
-          rel="noreferrer"
-          className="self-start"
-        >
-          {buttonLabel}
-        </Button>
+      <Button
+  to={buttonTo}
+  variant="outline"
+  icon={<ArrowUpRight />}
+  className="self-start"
+>
+  {buttonLabel}
+</Button>
       </div>
 
       {/* Cards grid */}

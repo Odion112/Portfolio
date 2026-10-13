@@ -77,7 +77,7 @@ function WorksPage({
               <p className="font-lora text-base italic text-[#1F1D1D]">
                 {label}
               </p>
-              <h1 className="mt-2 font-rothek text-[40px] font-semibold leading-tight text-black md:text-[48px]">
+              <h1 className="mt-2 font-rothek text-[40px] font-medium leading-tight text-black md:text-[48px]">
                 {heading}
               </h1>
             </div>
