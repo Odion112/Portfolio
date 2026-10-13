@@ -48,6 +48,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-padding-top: 6rem;
+}
+
 @theme {
   --font-rothek: "Trial Rothek", sans-serif;
   --font-lora: "Lora", serif;

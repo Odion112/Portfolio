@@ -29,7 +29,7 @@ function Footer({
   heading = "Have A Project In Mind?",
   text = "Honestly, this is where every project starts for me. I can't design a solution to a problem I don't understand yet — so I ask, I listen, I test, and I let what I learn shape everything that comes after.",
   buttonLabel = "Let's talk!",
-  buttonHref = "#contact",
+  buttonHref = "https://wa.me/2348100661300",
   name = "Odion Okhuevbie",
   links = footerLinks,
 }) {
@@ -40,7 +40,7 @@ function Footer({
         id="contact"
         className="bg-[linear-gradient(to_bottom,#4F46E5_0%,#FFFFFF_45%)] px-6 pb-20 pt-24 text-center"
       >
-        <h2 className="mx-auto max-w-[900px] font-rothek text-4xl font-medium text-black md:text-6xl">
+        <h2 className="mx-auto mt-10 max-w-[900px] font-rothek text-4xl font-medium text-black md:text-6xl">
           {heading}
         </h2>
 
@@ -56,7 +56,7 @@ function Footer({
       </section>
 
       {/* Links + copyright */}
-      <div className="mx-auto flex max-w-[1440px] flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between md:px-24">
+      <div className="mx-auto my-26 mt-10 flex max-w-[1440px] flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between md:px-24">
         <nav className="flex flex-wrap items-center gap-6 md:gap-10">
           {links.map((link) => (
             <a
@@ -75,11 +75,11 @@ function Footer({
       </div>
 
       {/* Large cropped name */}
-      <div className="mx-auto mt-10 h-[10vw] max-w-[1440px] overflow-hidden px-6 md:px-24">
-        <p className="whitespace-nowrap text-center font-lora text-[15vw] italic leading-none text-black md:text-[min(15vw,220px)]">
-          {name}
-        </p>
-      </div>
+      <div className="mx-auto  flex h-[12vw] max-w-[1440px] justify-center overflow-hidden px-6 md:h-[min(12vw,180px)] md:px-24">
+  <p className="whitespace-nowrap my-6 text-center font-lora text-[16vw] italic leading-none text-black md:text-[min(12vw,180px)]">
+    {name}
+  </p>
+</div>
     </footer>
   );
 }
