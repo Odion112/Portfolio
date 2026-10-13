@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CaseStudyLayout from "../components/CaseStudyLayout";
-import Overview from "../components/Overview";
+import CaseSection from "../components/CaseSection";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -19,7 +19,7 @@ function AmcaDetailsPage() {
       <Navbar />
 
       <CaseStudyLayout sections={sections}>
-        <Overview id="overview" />
+        <CaseSection id="overview" />
 
         {/* Temporary placeholders so you can test the scrolling.
             Replace them with your real sections later. */}

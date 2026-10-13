@@ -13,7 +13,7 @@ const defaultWorks = [
     imageAlt: "AMCA AI healthcare website on a tablet",
     title: "AMCA AI - Healthcare Website Redesign",
     tags: ["HealthTech", "Website redesign"],
-    href: "#",
+    href: "/works/amca-ai",
   },
   {
     id: "talentmatch-recruiter",
@@ -21,7 +21,7 @@ const defaultWorks = [
     imageAlt: "TalentMatch recruiter dashboard on a laptop",
     title: "TalentMatch - Recruiter Dashboard | UI/UX Case Study",
     tags: ["EdTech", "Web App"],
-    href: "#",
+    href: "/works/talentmatch-recruiter",
   },
   {
     id: "talentmatch-talent",
@@ -29,7 +29,7 @@ const defaultWorks = [
     imageAlt: "TalentMatch talent dashboard on a laptop",
     title: "TalentMatch - Talent Dashboard | UI/UX Case Study",
     tags: ["EdTech", "Web App"],
-    href: "#",
+    href: "/works/talentmatch-talent",
   },
   {
     id: "amca-2",

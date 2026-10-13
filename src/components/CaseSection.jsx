@@ -1,4 +1,4 @@
-function Overview({
+function CaseSection({
   label = "/Overview",
   heading = "From one cluttered page to two clear ones.",
   text = "AMCA AI is a healthcare AI platform that automates clinical documentation so healthcare professionals spend less time on paperwork. What started as a visual redesign quickly became a strategic one, the page had bigger problems than how it looked.",
@@ -19,4 +19,4 @@ function Overview({
   );
 }
 
-export default Overview;
+export default CaseSection;

@@ -14,7 +14,7 @@ const defaultWorks = [
     imageAlt: "AMCA AI healthcare website on a tablet",
     title: "AMCA AI - Healthcare Website Redesign",
     tags: ["HealthTech", "Website redesign"],
-    href: "#",
+    href: "/works/amca-ai",
   },
   {
     id: "talentmatch-recruiter",

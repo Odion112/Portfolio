@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import WorksPage from "./pages/WorksPage";
+import AmcaDetailsPage from "./pages/AmcaDetailsPage";
 
 // Scrolls to the top whenever the page changes
 function ScrollToTop() {
@@ -40,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<WorksPage />} />
+   <Route path="/works/amca-ai" element={<AmcaDetailsPage />} />
       </Routes>
     </>
   );

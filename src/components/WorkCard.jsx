@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function WorkCard({
   image,
   imageAlt = "",
@@ -37,17 +39,33 @@ function WorkCard({
   );
 
   const styles = `block w-[580px] max-w-full bg-[#F6F6F6] p-5 pb-8 shadow-[0_2px_4px_rgba(0,0,0,0.06)] ${className}`;
+  const linkStyles = `${styles} transition-transform hover:-translate-y-1`;
 
-  // If an href is passed, the whole card becomes a link
-  if (href) {
+  // No link, or a placeholder "#": plain card
+  if (!href || href === "#") {
+    return <article className={styles}>{content}</article>;
+  }
+
+  // External link (starts with http): normal link, new tab
+  if (href.startsWith("http")) {
     return (
-      <a href={href} className={`${styles} transition-transform hover:-translate-y-1`}>
+      <a
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        className={linkStyles}
+      >
         {content}
       </a>
     );
   }
 
-  return <article className={styles}>{content}</article>;
+  // Internal page (e.g. "/works/amca-ai"): React Router link
+  return (
+    <Link to={href} className={linkStyles}>
+      {content}
+    </Link>
+  );
 }
 
 export default WorkCard;
