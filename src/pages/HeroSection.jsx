@@ -3,7 +3,7 @@ import Button from "../components/Button";
 function Hero({
   heading = "UX/UI Designer who speaks both",
   highlight = "Design and Dev",
-  text = "Understanding how interfaces are built helps me design ones that actually work. That's why I dig into React, JavaScript, and Tailwind CSS alongside my design process.",
+ text = "Hi, I’m Odion. I design apps and websites people enjoy using.\n\nSomewhere along the way I got curious about how they actually get built, so I started learning React, JavaScript, and Tailwind CSS. Turns out, knowing what happens after handoff changes how I design.",
   buttonLabel = "View my work",
   buttonHref = "#works",
   socials = [],

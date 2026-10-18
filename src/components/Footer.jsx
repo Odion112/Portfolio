@@ -27,7 +27,7 @@ function ArrowUpRight() {
 
 function Footer({
   heading = "Have A Project In Mind?",
-  text = "Honestly, this is where every project starts for me. I can't design a solution to a problem I don't understand yet — so I ask, I listen, I test, and I let what I learn shape everything that comes after.",
+  text = "Got a rough idea, a half built product, or just a problem you can’t solve yet? Send me a message and let’s sort it out.",
   buttonLabel = "Let's talk!",
   buttonHref = "https://wa.me/2348100661300",
   name = "Odion Okhuevbie",

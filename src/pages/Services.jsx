@@ -31,7 +31,7 @@ const defaultServices = [
     title: "Design",
     subtitle: "UX/UI",
     description:
-      "This is where it all comes together for me. Turning a real problem into a web or mobile interface people don't have to think twice about, that's the part of the job I never get tired of.",
+      "I design web and mobile apps from first sketch to final screens. You get clean, easy to use interfaces and files your developers can pick up and build from.",
     tools: [
       { name: "Figma", logo: figma },
       { name: "ChatGPT", logo: chatgpt },
@@ -46,7 +46,7 @@ const defaultServices = [
     illustrationAlt: "Documents with a magnifying glass",
     title: "User Research",
     description:
-      "Honestly, this is where every project starts for me. I can't design a solution to a problem I don't understand yet — so I ask, I listen, I test, and I let what I learn shape everything that comes after.",
+      "I talk to your users, run usability tests, and dig into the feedback. You get clear insights on what people need and where they get stuck, so your next move isn’t a guess.",
     tools: [
       { name: "Search", logo: search },
       { name: "Google Forms", logo: googleForms },
@@ -59,7 +59,7 @@ const defaultServices = [
     illustrationAlt: "Chat bot inside a frame",
     title: "Design Audit",
     description:
-      "Sometimes the most exciting thing isn't building something new — it's sitting with something that already exists and finding exactly where it's quietly failing people, then fixing it.",
+      "Got a product that’s not performing like it should? I’ll go through it, find what’s confusing users, and tell you exactly what to fix first.",
     tools: [
       { name: "Google Analytics", logo: analytics },
       { name: "Audit tool", logo: auditTool, size: 32 },
@@ -72,7 +72,7 @@ const defaultServices = [
     illustrationAlt: "Two people discussing a product",
     title: "Product Consulting",
     description:
-      "I love sitting with founders and teams early, before the pixels, before the polish, helping them think through what the product should actually be and why.",
+      "Got an idea but not sure where to start? I work with founders and teams to figure out what to build, who it’s for, and what to ship first. You get a clear direction before a single pixel gets designed.",
     tools: [
       { name: "Consulting tool", logo: consultingTool },
       { name: "Ideas", logo: lightbulb },
@@ -132,7 +132,7 @@ function Services({
   label = "/My Service",
   heading = "Let's Talk",
   highlight = "Skillset",
-  text = `Design is only half the job, understanding the "why" and the "how it's built" is the other half. This is my range.`,
+  text = `I don’t just make things look good. I research the why, design the solution, and make sure it’s actually buildable. Here’s what I can do for you.`,
   services = defaultServices,
   className = "",
 }) {

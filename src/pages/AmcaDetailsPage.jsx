@@ -5,6 +5,7 @@ import InfoTable from "../components/InfoTable";
 import CaseStudyLayout from "../components/CaseStudyLayout";
 import CaseSection from "../components/CaseSection";
 import ImageBlock from "../components/ImageBlock";
+import ImageRow from "../components/ImageRow";
 
 // Change to your real file names in src/assets/images
 import heroImage from "../assets/images/amca.svg";
@@ -14,6 +15,9 @@ import insightImage from "../assets/images/insight.svg";
 import landingPage from "../assets/images/landing.svg";
 import aboutPage from "../assets/images/about-1.svg";
 import mobileScreens from "../assets/images/mobile.svg";
+import mobileOne from "../assets/images/screen-1.svg";
+import mobileTwo from "../assets/images/screen-2.svg";
+import mobileThree from "../assets/images/screen-3.svg";
 
 const sections = [
   { id: "overview", label: "Overview" },
@@ -52,7 +56,7 @@ const problems = [
 
 function AmcaDetailsPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="overflow-x-clip bg-white">
       <Navbar />
 
       {/* Header */}
@@ -69,7 +73,7 @@ function AmcaDetailsPage() {
           <span className="text-[#1F1D1D]">AMCA AI</span>
         </nav>
 
-        <h1 className="mt-8 font-rothek text-[36px] font-medium leading-tight text-black md:text-[44px]">
+        <h1 className="mt-14 font-rothek text-[36px] font-medium leading-tight text-black md:text-[44px]">
           AMCA AI - Redesign
         </h1>
         <p className="mt-3 font-rothek text-lg font-normal text-[#8A8A8A]">
@@ -79,11 +83,11 @@ function AmcaDetailsPage() {
         <img
           src={heroImage}
           alt="AMCA AI website on a tablet"
-          className="mt-10 h-auto w-full object-cover"
+          className="mt-14 h-auto w-full object-cover"
         />
 
         <InfoTable
-          className="mt-10"
+          className="mt-16"
           items={[
             { label: "Role", value: "Product Designer" },
             { label: "Industry", value: "HealthTech" },
@@ -95,7 +99,7 @@ function AmcaDetailsPage() {
       </header>
 
       {/* Table of contents + sections */}
-      <CaseStudyLayout sections={sections}>
+      <CaseStudyLayout className="mt-10" sections={sections}>
         <CaseSection
           id="overview"
           label="/Overview"
@@ -175,11 +179,14 @@ function AmcaDetailsPage() {
             src={aboutPage}
             alt="New AMCA AI About Us page"
           />
-         <ImageBlock
+        <ImageRow
   label="MOBILE SCREENS"
-  src={mobileScreens}
-  alt="Mobile versions of both pages"
-  scrollable
+  imageWidth={220}
+  images={[
+    { src: mobileOne, alt: "Mobile landing page" },
+    { src: mobileTwo, alt: "Mobile About Us page" },
+    { src: mobileThree, alt: "Mobile screen three" },
+  ]}
 />
         </CaseSection>
 
